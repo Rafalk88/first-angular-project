@@ -21,4 +21,8 @@ export class AppComponent {
   buttonClick() {
     alert('clicked button')
   }
+
+  keyEnter(e: KeyboardEvent) {
+    if (e.key === 'Enter') alert('Enter key pressed')
+  }
 }
