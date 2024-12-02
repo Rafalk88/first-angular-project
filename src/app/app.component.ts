@@ -15,4 +15,5 @@ export class AppComponent {
   imgURL: string = 'https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2023/2023-11/angular-logo-1200-303.png?sfvrsn=d8bbe35c_3';
   imgAlt: string = 'angular-picture';
   isDisabled: boolean = false;
+  isActive: boolean = false;
 }

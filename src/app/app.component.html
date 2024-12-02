@@ -14,3 +14,6 @@
 
 <button disabled="{{isDisabled}}">Disable using string interpolation</button>
 <button [disabled]="isDisabled">Disable using property binding</button>
+
+<!-- class Binding -->
+<button [class.active]="isActive" [class.no-active]="!isActive">Click me</button>
