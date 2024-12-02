@@ -12,8 +12,18 @@
   property binding doesn't convert value to string.
 -->
 
-<button disabled="{{isDisabled}}">Disable using string interpolation</button>
-<button [disabled]="isDisabled">Disable using property binding</button>
+<div class="container">
+  <button disabled="{{isDisabled}}">Disable using string interpolation</button>
+  <button [disabled]="isDisabled">Disable using property binding</button>
 
-<!-- class Binding -->
-<button [class.active]="isActive" [class.no-active]="!isActive">Click me</button>
+  <!-- class Binding -->
+  <button
+    [class.active]="isActive"
+    [class.no-active]="!isActive"
+    [class.active-border]="isActive"
+    [class.no-active-border]="!isActive"
+  >
+    Click me
+  </button>
+</div>
+

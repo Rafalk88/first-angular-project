@@ -1,6 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+button {
+  width: 15rem;
+  height: 5rem;
+  border: 3px solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .active {
   background: green;
 }
 .no-active {
   background: red;
+}
+
+.active-border {
+  border-color: yellow;
+}
+
+.no-active-border {
+  border-color: blue;
 }
