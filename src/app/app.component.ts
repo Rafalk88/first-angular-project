@@ -16,4 +16,5 @@ export class AppComponent {
   imgAlt: string = 'angular-picture';
   isDisabled: boolean = false;
   isActive: boolean = false;
+  fruitsName: string = 'apple';
 }
