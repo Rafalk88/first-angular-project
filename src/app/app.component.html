@@ -5,3 +5,12 @@
 <h2>{{ title }}</h2>
 <p>{{ 1+1 }}</p>
 <img [src]="imgURL" [alt]="imgAlt">
+
+<!--
+  difference between string interpolation & property binding is that
+  string interpolation converts value to string when its loaded in browser
+  property binding doesn't convert value to string.
+-->
+
+<button disabled="{{isDisabled}}">Disable using string interpolation</button>
+<button [disabled]="isDisabled">Disable using property binding</button>
