@@ -17,4 +17,8 @@ export class AppComponent {
   isDisabled: boolean = false;
   isActive: boolean = false;
   fruitsName: string = 'apple';
+
+  buttonClick() {
+    alert('clicked button')
+  }
 }
