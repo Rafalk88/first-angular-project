@@ -5,4 +5,6 @@ import {  Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class AppNavbar {}
+export class AppNavbar {
+  title: string = "this loaded dynamically"
+}
