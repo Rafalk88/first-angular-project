@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppNavbar } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AppNavbar, HeaderComponent],
+  imports: [RouterOutlet, AppNavbar, HeaderComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -18,11 +19,22 @@ export class AppComponent {
   isActive: boolean = false;
   fruitsName: string = 'apple';
 
+  userName: string = 'John Doe';
+
   buttonClick() {
     alert('clicked button')
   }
 
   keyEnter(e: KeyboardEvent) {
     if (e.key === 'Enter') alert('Enter key pressed')
+  }
+
+  keyupFiltering(user: HTMLInputElement) {
+    console.log(user.id)
+  }
+
+  updateUsername(username: HTMLInputElement) {
+    this.userName = username.value;
+    console.log(this.userName);
   }
 }
