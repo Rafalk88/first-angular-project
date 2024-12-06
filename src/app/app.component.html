@@ -1,6 +1,9 @@
 <!-- old way -->
-<h2 *ngIf="isLoggedIn">{{ userName }}</h2>
-<h4 *ngIf="!isLoggedIn">Default user</h4>
+<h2 *ngIf="isLoggedIn; else message">{{ userName }}</h2>
+
+<ng-template #message>
+  <h4>User is not logged in</h4>
+</ng-template>
 
 <!-- new way -->
 <!-- in the new way we don't need to import NGIf to js file -->
