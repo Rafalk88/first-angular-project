@@ -1,2 +1,9 @@
-<!-- old way -->
+<!-- old way
 <h2 *ngIf="isLoggedIn">{{ userName }}</h2>
+-->
+
+<!-- new way -->
+<!-- in the new way we don't need to import NGIf to js file -->
+@if (isLoggedIn) {
+  <h3>{{ userName }}</h3>
+}
