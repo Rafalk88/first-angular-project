@@ -18,6 +18,7 @@ export class AppComponent {
   isDisabled: boolean = false;
   isActive: boolean = false;
   fruitsName: string = 'apple';
+  textValue: string = 'This data comes from cmponent';
 
   userName: string = 'John Doe';
 

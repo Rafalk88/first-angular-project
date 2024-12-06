@@ -51,5 +51,8 @@
 <!-- two way data binding
 <input type="text" [value]="userName" #username (keyup.enter)="updateUsername(username)">
 -->
-<input type="text" [(ngModel)]="userName">
-<p>{{userName}}</p>
+<!-- one way data binding -->
+<input type="text" value="One way data binding">
+<input type="text" [value]="textValue">
+
+<input type="text" [(ngModel)]="textValue">
