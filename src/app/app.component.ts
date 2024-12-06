@@ -12,6 +12,6 @@ import { NgIf } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  isLoggedIn: boolean = true;
+  isLoggedIn: boolean = false;
   userName:string = 'John Doe';
 }
