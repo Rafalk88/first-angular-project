@@ -6,4 +6,6 @@
 <!-- in the new way we don't need to import NGIf to js file -->
 @if (isLoggedIn) {
   <h3>{{ userName }}</h3>
+} @else {
+  <h4>Default user in syntax block</h4>
 }
