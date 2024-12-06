@@ -12,3 +12,8 @@
 } @else {
   <h4>Default user in syntax block</h4>
 }
+
+<!-- id directives with number values -->
+
+<button (click)="countLoginAttempts()">Log In</button>
+<h4 *ngIf="loginCount >= 3">Exceeded 3 login attempts. Please try again later!</h4>
